@@ -24,15 +24,19 @@ char printContinue(){
 void printResult(int r){
 
     if (r == 0){
-        cout << " Congratualations, you won! " << endl;
+        cout << "Congratualations, you won! " << endl;
+        return;
     }
     if (r == 1){
-        cout << "So close, but you tied. " << endl;
+        cout << "Unfortunately, You lost." << endl;
+        return;
     }
     if (r == 2){
-        cout << "Unfortunately, You lost. " << endl;
+        cout << "So close, you tied! " << endl;
+        return;
     }
     else {
         cout << "Error. Please Try Again." << endl;
+        return;
     }
 }

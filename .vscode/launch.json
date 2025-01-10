@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "c:/Users/plumm/Desktop/Gesture Project/GestureTrackingApplication",
-      "program": "c:/Users/plumm/Desktop/Gesture Project/GestureTrackingApplication/build/Debug/outDebug",
+      "program": "c:/Users/plumm/Desktop/Gesture Project/GestureTrackingApplication/rps.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

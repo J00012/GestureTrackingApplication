@@ -55,7 +55,7 @@ int randNum(){
 
     random = std::rand()% 3 + 1;
 
-    cout<< "The computer chose " << convertNumber (random) <<endl;
+    cout<< "The computer chose " << convertNumber (random) <<'.' <<endl;
 
     return random;
 }
