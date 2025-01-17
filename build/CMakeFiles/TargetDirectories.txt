@@ -1,0 +1,4 @@
+C:/Users/plumm/Desktop/Gesture Project/GestureTrackingApplication/build/CMakeFiles/GestureTrackingProject.dir
+C:/Users/plumm/Desktop/Gesture Project/GestureTrackingApplication/build/CMakeFiles/PACKAGE.dir
+C:/Users/plumm/Desktop/Gesture Project/GestureTrackingApplication/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/plumm/Desktop/Gesture Project/GestureTrackingApplication/build/CMakeFiles/ZERO_CHECK.dir
