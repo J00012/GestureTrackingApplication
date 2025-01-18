@@ -142,11 +142,7 @@
 		},
 		{
 			"isExternal" : true,
-			"path" : "C:/Users/plumm/Desktop/OpenCV_source/opencv/build/OpenCVConfig-version.cmake"
-		},
-		{
-			"isExternal" : true,
-			"path" : "C:/Users/plumm/Desktop/OpenCV_source/opencv/build/OpenCVConfig.cmake"
+			"path" : "C:/Users/plumm/Desktop/OpenCV_source/opencv/build/x64/vc16/lib/OpenCVConfig-version.cmake"
 		},
 		{
 			"isExternal" : true,

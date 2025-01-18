@@ -265,7 +265,7 @@ MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //The directory containing a CMake configuration file for OpenCV.
-OpenCV_DIR:PATH=OpenCV_DIR-NOTFOUND
+OpenCV_DIR:PATH=C:/Users/plumm/Desktop/OpenCV_source/opencv/build/x64/vc16/lib
 
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=C:/Users/plumm/Desktop/Gesture Project/GestureTrackingApplication/build

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/GestureTrackingProject.exe"
+			"path" : "RelWithDebInfo/GestureTrackingProject.exe"
 		},
 		{
-			"path" : "Debug/GestureTrackingProject.pdb"
+			"path" : "RelWithDebInfo/GestureTrackingProject.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 6,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 9,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -45,7 +45,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG"
 				}
 			],
 			"includes" : 
@@ -75,7 +75,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -84,82 +84,82 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100d.lib",
+				"fragment" : "C:\\Users\\plumm\\Desktop\\OpenCV_source\\opencv\\build\\x64\\vc16\\lib\\opencv_world4100.lib",
 				"role" : "libraries"
 			},
 			{

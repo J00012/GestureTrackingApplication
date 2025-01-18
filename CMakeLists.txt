@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 project(GestureTrackingProject)
 
-set(OpenCV_DIR C:/Users/plumm/Desktop/OpenCV_source/opencv/build)
 find_package(OpenCV REQUIRED)
 
 add_executable(${PROJECT_NAME} main.cpp)

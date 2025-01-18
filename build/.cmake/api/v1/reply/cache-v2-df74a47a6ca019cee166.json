@@ -1411,7 +1411,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "OpenCV_DIR-NOTFOUND"
+			"value" : "C:/Users/plumm/Desktop/OpenCV_source/opencv/build/x64/vc16/lib"
 		},
 		{
 			"name" : "Project_BINARY_DIR",
