@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\plumm\Desktop\Gesture Project\GestureTrackingApplication\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Users\mrpri\Desktop\GestureTrackingApplication\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\plumm\Desktop\Gesture Project\GestureTrackingApplication\build\Debug\GestureTrackingProject.exe</FullPath>
+      <FullPath>C:\Users\mrpri\Desktop\GestureTrackingApplication\build\Debug\GestureTrackingProject.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
