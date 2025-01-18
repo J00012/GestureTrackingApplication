@@ -2,7 +2,7 @@
 
 
 
-1. OpenCV from "https://opencv.org/". (Instructions on how to setup is on the website, will have to add a path by 'Editing Environment Variables on your account' on your device.)
+1. OpenCV from "https://opencv.org/releases/". (Instructions on how to setup is on the website, will have to add a path by 'Editing Environment Variables on your account' on your device.)
 
 2. CMake from "https://cmake.org/" (Will Also rquire you to 'Edit Environment Variables on your account' on your device.)
 
