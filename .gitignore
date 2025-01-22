@@ -1,0 +1,41 @@
+# Ignore build directories created by CMake
+build/
+cmake-build-*/
+
+# Ignore CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Ignore compiled object files and executables
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.app
+
+# Ignore debug and release directories
+Debug/
+Release/
+
+# Ignore VS Code specific files
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+# Ignore launch.json if it contains machine-specific paths
+.vscode/launch.json
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+*.swp
+
+# Ignore library dependencies (if applicable)
+lib/
