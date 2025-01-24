@@ -97,7 +97,7 @@ int main() {
         // IF we have any contours on the camera. 
         if (!contours.empty()) {
 
-            // Step 3: Identify the largest contour (likely the hand)
+            // Step 3: Identify the largest contour (likely THE HAND)
             double maxArea = 0;
             int largestContourIndex = -1;
             for (size_t i = 0; i < contours.size(); i++) {
@@ -112,7 +112,7 @@ int main() {
                 // Draw the largest contour in GREEN using-> (cv:: Scalar(0,255,0))
                 cv::drawContours(frame, contours, largestContourIndex, cv::Scalar(0, 255, 0), 2);
 
-                // Step 4: Find convex hull
+                // Step 4: Find convex hull (BLUE OUTLINE)
                 std::vector<cv::Point> hull; // variable named hull, data type is also vector of points. 
                 cv::convexHull(contours[largestContourIndex], hull); // 'cv:: ConvexHull' finds the convex shape (tightest fit) around the contour.
 
@@ -130,16 +130,40 @@ int main() {
                 cv::convexityDefects(contours[largestContourIndex], hullIndices, defects);
 
                 int fingerCount = 0;
+                std::vector<cv::Point> fingerTips;
+                std::vector<cv::Point> fingerJoints;
+
                 for (const auto& defect : defects) {
                     float depth = defect[3] / 256.0; // Depth of defect point
                     if (depth > 20) { // Threshold for finger detection
                         fingerCount++;
+                        cv::Point start = contours[largestContourIndex][defect[0]]; // Start point
+                        cv::Point end = contours[largestContourIndex][defect[1]];   // End point
+                        cv::Point far = contours[largestContourIndex][defect[2]];   // Farthest point (between the two)
+
+                        // Calculate the midpoint between the start and end points of the finger
+                        cv::Point middleJoint = (start + end) / 2;
+
+                        // Add finger tip and middle joint to respective lists
+                        fingerTips.push_back(far);
+                        fingerJoints.push_back(middleJoint);
                     }
+                    
                 }
 
                 // Display the finger count
                 std::string gestureText = "Fingers: " + std::to_string(fingerCount);
                 cv::putText(frame, gestureText, cv::Point(100, 100), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(255, 255, 255), 2);
+
+
+                // Draw circles at the finger joints (middle points) and tips
+                for (const auto& joint : fingerJoints) {
+                    cv::circle(frame, joint, 5, cv::Scalar(0, 255, 255), -1); // Yellow circle at the joint
+                }
+                for (const auto& tip : fingerTips) {
+                    cv::circle(frame, tip, 5, cv::Scalar(0, 0, 255), -1); // Red circle at the tip
+                }
+
             }
         }
 
