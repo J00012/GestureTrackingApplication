@@ -85,7 +85,13 @@ int main() {
 
 
         // Step 2: Find contours (Helpful tip: (GREEN LINES ON LIVE FEED BTW) - curves that join points along an object's boundary that have the same color or intensity. )
-        std::vector<std::vector<cv::Point>> contours;
+        std::vector<std::vector<cv::Point>> contours; //'contours'- variable that stores the detected contours, data type vector. 
+        
+        // std::vector<>: A dynamic array in C++ that can store multiple elements.
+        // cv::Point: Represents a single 2D point (x, y coordinates) in an image.
+        // std::vector<cv::Point>: Represents a single contour, which is a sequence of points that outline an object.
+        // std::vector<std::vector<cv::Point>>: Represents multiple contours found in the image, where each contour is stored as a vector of points.
+
         cv::findContours(binaryFrame, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
         // IF we have any contours on the camera. 
@@ -103,17 +109,20 @@ int main() {
             }
 
             if (largestContourIndex != -1) {
-                // Draw the largest contour
+                // Draw the largest contour in GREEN using-> (cv:: Scalar(0,255,0))
                 cv::drawContours(frame, contours, largestContourIndex, cv::Scalar(0, 255, 0), 2);
 
                 // Step 4: Find convex hull
-                std::vector<cv::Point> hull;
-                cv::convexHull(contours[largestContourIndex], hull);
+                std::vector<cv::Point> hull; // variable named hull, data type is also vector of points. 
+                cv::convexHull(contours[largestContourIndex], hull); // 'cv:: ConvexHull' finds the convex shape (tightest fit) around the contour.
 
-                // Draw the convex hull
+                // Draw the convex hull (HAND OUTLINE IN BLUE using-> (cv::Scalar(255,0,0))
                 cv::polylines(frame, hull, true, cv::Scalar(255, 0, 0), 2);
 
-                // Step 5: Detect and count fingers using convexity defects
+
+                // Step 5: Detect and count fingers using convexity defects (FINGER DETECTION!!!!)
+                // Note: Convexity defects are used to count fingers by measuring inward dips. 
+                // If the depth of a defect is greater than 20, it's considered a finger. 
                 std::vector<int> hullIndices;
                 cv::convexHull(contours[largestContourIndex], hullIndices, false);
 
@@ -130,7 +139,7 @@ int main() {
 
                 // Display the finger count
                 std::string gestureText = "Fingers: " + std::to_string(fingerCount);
-                cv::putText(frame, gestureText, cv::Point(50, 50), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(255, 255, 255), 2);
+                cv::putText(frame, gestureText, cv::Point(100, 100), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(255, 255, 255), 2);
             }
         }
 
