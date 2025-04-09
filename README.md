@@ -1,4 +1,4 @@
-******************************* Files and extensions we had to download for our hand gesture rock paper scissors test MVP 
+******************************* Files and extensions
 
 
 
